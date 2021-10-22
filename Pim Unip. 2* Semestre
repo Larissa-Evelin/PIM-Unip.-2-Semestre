@@ -15,14 +15,14 @@ struct agendamentos // tipo de dado
   char nome [50], endereco [40], e_mail[20], sexo[10];
   int idade, numero;
 };
-struct agendamentos paciente; // definiÁao da struct
+struct agendamentos paciente; // defini√ßao da struct
 
 struct cadastro_medico // tipo de dado
 {
  char nome [50], endereco [40], sexo[10], e_mail[20];
   int idade, numero;
 };
-struct cadastro_medico medico; // definiÁao da struct
+struct cadastro_medico medico; // defini√ßao da struct
 
 struct ficha_funcionario // tipo de dado
 {
@@ -33,14 +33,14 @@ struct ficha_funcionario // tipo de dado
 
 };
 
-struct ficha_funcionario funci; //definiÁao da struct
+struct ficha_funcionario funci; //defini√ßao da struct
 
 struct reclama_elogios // tipo de dado
 {
   char nome [50], relato[100];
 
 };
-struct reclama_elogios insat_satis; // definiÁao da struct
+struct reclama_elogios insat_satis; // defini√ßao da struct
 
 struct cancelamento_cons // tipo de dado
 {
@@ -50,12 +50,12 @@ struct cancelamento_cons // tipo de dado
 
 };
 
-struct cancelamento_cons consulta; // definiÁao da struct
+struct cancelamento_cons consulta; // defini√ßao da struct
 
 int main(void){
-// ======== INICIO DO C”DIGO PRINCIPAL / TELA DE LOGIN DO USUARIO =====
-    /* AQUI O USUARIO SER¡ AUTENTICADO E VALIDADO, CASO SEJA UM ADMIN, ESTE SERA
-    DIRECIONADO PARA TELA INICIAL DA APLICACAO QUE … O MENU PRINCIPAL*/
+// ======== INICIO DO C√ìDIGO PRINCIPAL / TELA DE LOGIN DO USUARIO =====
+    /* AQUI O USUARIO SER√Å AUTENTICADO E VALIDADO, CASO SEJA UM ADMIN, ESTE SERA
+    DIRECIONADO PARA TELA INICIAL DA APLICACAO QUE √â O MENU PRINCIPAL*/
     char login[6] = "", senha[5] = "";
     int numero;
 
@@ -72,21 +72,21 @@ int main(void){
             printf("\n\n\tUSUARIO LOGADO \n\n");
             printf("\n\tBEM VINDO! \n");
 
-            system("pause"); // Pausa a tela para o usuario verificar as informaÁıes
+            system("pause"); // Pausa a tela para o usuario verificar as informa√ß√µes
             goto inicio; // Pula para a tela inicial(se o usuario for valido)
         }else{
             printf("Nome ou senha incorreto. Tente novamente.\n");
-            system("pause"); // Pausa a tela para o usuario verificar as informaÁıes
-            goto autenticar; // Salta para o ponto de autenticaÁ„o caso o usuario seja invalido(funciona como um looping infinito);
+            system("pause"); // Pausa a tela para o usuario verificar as informa√ß√µes
+            goto autenticar; // Salta para o ponto de autentica√ß√£o caso o usuario seja invalido(funciona como um looping infinito);
         }
-// ====== INICIO DO C”DIGO DE VERIFICA«’ES, ATUALIZA«’ES E TELAS ======
+// ====== INICIO DO C√ìDIGO DE VERIFICA√á√ïES, ATUALIZA√á√ïES E TELAS ======
     inicio: // ponto de salto do iniciar
         system("cls && mode 70, 70"); // Limpa a tela e define um taminho para o terminal.
         printf("\nTelas para cadastros de pacientes. \n\n");
         printf(" 1- Agendamentos\n");
         printf(" 2- Cadastro de medicos\n");
         printf(" 3- Cadastros de funcionarios\n");
-        printf(" 4- ReclamaÁıes e elogios dos clientes\n");
+        printf(" 4- Reclama√ß√µes e elogios dos clientes\n");
         printf(" 5- Cancelamento de consultas \n\n");
         printf("\nEcolha a opcao desejada: \n");
         scanf("%d", &numero);
@@ -108,7 +108,7 @@ int main(void){
             break;
         case 4:
             system("cls");
-            printf("ELEGIOS E RECLAMA«OES ... \n");
+            printf("ELEGIOS E RECLAMA√áOES ... \n");
             goto reclamacoes_elogios;
             break;
         case 5:
@@ -130,7 +130,7 @@ int main(void){
 
         printf("\n------------------------ AGENDAMENTOS ---------------------------------\n\n\n");
 
-        printf("\n----------------PREENCHA DE ACORDO COM AS INFORMA«OES ABAIXO ---------------------------------\n\n\n");
+        printf("\n----------------PREENCHA DE ACORDO COM AS INFORMA√áOES ABAIXO ---------------------------------\n\n\n");
 
         printf("INFORME O NOME..................................................");
         fflush(stdin);
@@ -169,13 +169,13 @@ int main(void){
 
 
 
-        // =========================== CADASTRO M…DICO ==================================
+        // =========================== CADASTRO M√âDICO ==================================
 
     cadastromedico:
 
         printf("\n------------------------ CADASTRO MEDICO ---------------------------------\n\n\n");
 
-        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA«OES ABAIXO ---------------------------------\n\n\n");
+        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA√áOES ABAIXO ---------------------------------\n\n\n");
 
         printf("NOME  DO MEDICO..................................................");
         fflush(stdin);
@@ -220,7 +220,7 @@ int main(void){
 
         printf("\n------------------------ CADASTRO DE FUNCIONARIOS ---------------------------------\n\n\n");
 
-        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA«OES ABAIXO ---------------------------------\n\n\n");
+        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA√áOES ABAIXO ---------------------------------\n\n\n");
 
         printf("INFORME O NOME..................................................");
         fflush(stdin);
@@ -255,15 +255,15 @@ int main(void){
         printf("\nSEXO........................... %s \n" , funci.sexo);
 
         system("pause");
-        goto inicio; // Direciona o usuario para o inicio apÛs o encerramento do processo
+        goto inicio; // Direciona o usuario para o inicio ap√≥s o encerramento do processo
 
-// =========================== RECLAMA«OES E ELEGIOS ==================================
+// =========================== RECLAMA√áOES E ELEGIOS ==================================
 
     reclamacoes_elogios: //LEMBRA DE TROCAR
 
         printf("\n***************\tRECLAMACOES E ELEGIOS ***************\t\n\n\n");
 
-        printf("\n***************\tPREENCHA DE ACORDO COM AS INFORMA«OES ABAIXO ***************\t\n\n\n");
+        printf("\n***************\tPREENCHA DE ACORDO COM AS INFORMA√áOES ABAIXO ***************\t\n\n\n");
 
         printf("INFORME O NOME..................................................");
         fflush(stdin);
@@ -286,7 +286,7 @@ int main(void){
 
         printf("\n------------------------ CANCELAMENTOS DE CONSULTAS ---------------------------------\n\n\n");
 
-        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA«OES ABAIXO ---------------------------------\n\n\n");
+        printf("\n------------------------ PREENCHA DE ACORDO COM AS INFORMA√áOES ABAIXO ---------------------------------\n\n\n");
 
         printf("INFORME O NOME..................................................");
         fflush(stdin);
